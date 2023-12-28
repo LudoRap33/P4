@@ -39,10 +39,41 @@ body {
 
     section.reservation {
 
-        h2 {}
+        h2 {
+            font-family: Shrikhand;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+        }
 
-        p {}
+        p {
+            font-family: Shrikhand;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+        }
 
-        button {}
+        button {
+            color: violet;
+            font-style: normal;
+            font-size: 10px;
+        }
+        button2 {
+            color: white;
+            font-style: normal;
+            font-size: 10xp;
+        }
+        button3 {
+            color: white;
+            font-style: normal;
+            font-size: 10xp;
+        }
+        button4 {
+            color: white;
+            font-style: normal;
+            font-size: 10xp;
+        }
     }
 }

@@ -31,6 +31,41 @@ body section.location span {
   font-style: normal;
   font-weight: 500;
 }
+body section.reservation h2 {
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+body section.reservation p {
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+body section.reservation button {
+  color: violet;
+  font-style: normal;
+  font-size: 10px;
+}
+body section.reservation button2 {
+  color: white;
+  font-style: normal;
+  font-size: 10xp;
+}
+body section.reservation button3 {
+  color: white;
+  font-style: normal;
+  font-size: 10xp;
+}
+body section.reservation button4 {
+  color: white;
+  font-style: normal;
+  font-size: 10xp;
+}
+
 body {
   margin: 0;
   padding: 0;
