@@ -38,42 +38,104 @@ body {
     }
 
     section.reservation {
+        background-color: $greyLight;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         h2 {
-            font-family: Shrikhand;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 400;
             margin: 0;
+            padding-top: 30px;
         }
 
         p {
-            font-family: Shrikhand;
-            font-size: 30px;
+            font-family: Roboto;
+            font-size: 18px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 300;
+            text-align: center;
             margin: 0;
+            padding-top: 30px;
         }
 
         button {
-            color: violet;
+            width: 218px;
+            height: 50px;
+            border-radius: 25px;
+            background: var(--Button-Gradient, linear-gradient(193deg, $violet -11.44%, $pink 123.93%));
+            /* Shadow/Button */
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            font-family: Roboto;
+            font-size: 16px;
             font-style: normal;
-            font-size: 10px;
-        }
-        button2 {
-            color: white;
-            font-style: normal;
-            font-size: 10xp;
-        }
-        button3 {
-            color: white;
-            font-style: normal;
-            font-size: 10xp;
-        }
-        button4 {
-            color: white;
-            font-style: normal;
-            font-size: 10xp;
+            font-weight: 500;
+            color: $white;
+            text-align: center;
+            border: none;
+            margin-top: 30px;
+            margin-bottom: 50px;
         }
     }
+
+    section.functioning {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            text-align: left;
+            width: 80%;
+        }
+
+        div {
+            border-radius: 20px;
+            background: $greyLight;
+            /* Shadow/Instructions */
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            height: 72.379px;
+            width: 80%;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+
+            .round {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: $violet;
+                color: $white;
+                font-family: Roboto;
+                font-size: 14.182px;
+                font-style: normal;
+                font-weight: 500;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: -11px;
+            }
+
+            i {
+                color: $greyTint4;
+                font-size: 19px;
+                margin-left: 5%;
+            }
+
+            .title {
+                color: #000;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                width: 80%;
+                text-align: center;
+            }
+
+
+        }
+    }
+
+
 }
