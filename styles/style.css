@@ -88,6 +88,10 @@ body section.functioning div {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+body section.functioning div:hover i {
+  color: #9356DC;
 }
 body section.functioning div .round {
   width: 24px;
@@ -119,10 +123,120 @@ body section.functioning div .title {
   width: 80%;
   text-align: center;
 }
+body section.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+body section.restaurants h2 {
+  text-align: left;
+  width: 80%;
+}
+body section.restaurants article {
+  border-radius: 15px;
+  height: 251px;
+  background-color: white;
+  position: relative;
+  width: 80%;
+  margin-bottom: 18px;
+}
+body section.restaurants article .sticker {
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  color: #008766;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  top: 15px;
+  right: 15px;
+}
+body section.restaurants article img {
+  height: 174px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  object-fit: cover;
+}
+body section.restaurants article div {
+  height: 77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 13px;
+}
+body section.restaurants article div h3 {
+  margin: 0;
+}
+body section.restaurants article div p {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+}
+body section.restaurants article i {
+  position: absolute;
+  top: 203px;
+  right: 10%;
+  font-size: 22px;
+}
+body footer {
+  background-color: #353535;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+body footer h2 {
+  margin: 0;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.24px;
+  text-align: left;
+}
+body footer p {
+  margin: 0;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+}
+body footer p a {
+  color: #FFF;
+}
+body footer p a .fa-utensils {
+  padding-right: 10px;
+}
+body footer p a .fa-handshake-angle {
+  padding-right: 5px;
+}
+body footer p.contact {
+  padding-bottom: 25px;
+}
 
 body {
   margin: 0;
   padding: 0;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 h2 {
@@ -131,6 +245,14 @@ h2 {
   font-style: normal;
   font-weight: 700;
   text-align: center;
+}
+
+h3 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
