@@ -79,21 +79,24 @@ body section.functioning h2 {
   width: 80%;
 }
 body section.functioning div {
+  width: 80%;
+}
+body section.functioning div div {
   border-radius: 20px;
   background: #F6F6F6;
   /* Shadow/Instructions */
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   height: 72.379px;
-  width: 80%;
+  width: 100%;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-body section.functioning div:hover i {
+body section.functioning div div:hover i {
   color: #9356DC;
 }
-body section.functioning div .round {
+body section.functioning div div .round {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -109,12 +112,12 @@ body section.functioning div .round {
   align-items: center;
   margin-left: -11px;
 }
-body section.functioning div i {
+body section.functioning div div i {
   color: #7E7E7E;
   font-size: 19px;
   margin-left: 5%;
 }
-body section.functioning div .title {
+body section.functioning div div .title {
   color: #000;
   font-family: Roboto;
   font-size: 16px;
@@ -134,15 +137,21 @@ body section.restaurants h2 {
   text-align: left;
   width: 80%;
 }
-body section.restaurants article {
+body section.restaurants div {
+  width: 80%;
+}
+body section.restaurants div a {
+  width: 100%;
+}
+body section.restaurants div a article {
   border-radius: 15px;
   height: 251px;
   background-color: white;
   position: relative;
-  width: 80%;
+  width: 100%;
   margin-bottom: 18px;
 }
-body section.restaurants article .sticker {
+body section.restaurants div a article .sticker {
   width: 80px;
   height: 29px;
   background-color: #99E2D0;
@@ -160,31 +169,31 @@ body section.restaurants article .sticker {
   top: 15px;
   right: 15px;
 }
-body section.restaurants article img {
+body section.restaurants div a article img {
   height: 174px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
   object-fit: cover;
 }
-body section.restaurants article div {
+body section.restaurants div a article div {
   height: 77px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 13px;
 }
-body section.restaurants article div h3 {
+body section.restaurants div a article div h3 {
   margin: 0;
 }
-body section.restaurants article div p {
+body section.restaurants div a article div p {
   margin: 0;
   font-family: Roboto;
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
 }
-body section.restaurants article i {
+body section.restaurants div a article i {
   position: absolute;
   top: 203px;
   right: 10%;
@@ -228,6 +237,29 @@ body footer p.contact {
   padding-bottom: 25px;
 }
 
+@media screen and (min-width: 769px) {
+  body {
+    height: auto;
+  }
+  body main section.functioning div {
+    display: flex;
+    justify-content: space-between;
+  }
+  body main section.functioning div div {
+    width: 30%;
+  }
+  body main section.restaurants div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  body main section.restaurants div a {
+    width: 45%;
+  }
+  body main section.restaurants div a article {
+    margin-bottom: 50px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
