@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le_delice_des_sens</title>
+    <link
+        href="https://le_delice_des_sens.jpg"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <body>
+        <header>
+            <h1>ohmyfood</h1>
+        </header>
+
+        <main>
+            <title>ENTRéES</title>
+            <h1>Friccassé d'escagorts. Au piment d'Espellete</h1>
+        </main>
+    
+        <main>
+            <title>PLATS</title>
+            <h1>Filet de boeufs aux herbes. Accompagné de sa ribambelle de légumes</h1>
+        </main>
+        
+        <main>
+            <title>DESSERTS</title>
+            <h1>PAris-Brest. Revisité</h1>
+        </main>
+    
+        <main>
+            <title>ENTRéES</title>
+            <h1>Foie gras de canard mi-cuit. Et ses copeux de truffe noire.</h1>
+        </main>
+    
+        <main>
+            <title>PLATS</title>
+            <h1>Parmentier de queue de boeuf. À la truffe noire de sa purée de légume.</h1>
+        </main>
+    
+        <main>
+            <title>DESSERTS</title>
+            <h1>Macaron au chocolat d'ewxpection. Et glace à la vanille de Madagascar</h1>
+        </main>
+    
+        <main>
+            <title>ENTRéES</title>
+            <h1>OEuf au plat. Assaisonné à la truffe sur lit de caviar.</h1>
+        </main>
+    
+        <main>
+            <title>PLATS</title>
+            <h1>Filet de turbot. Aux agrumes</h1>
+        </main>
+    
+        <main>
+            <title>DESSERTS</title>
+            <h1>Mousse au chocolat. Au piment d'Espelette et à la truffe noire.</h1>
+        </main>
+</head>
