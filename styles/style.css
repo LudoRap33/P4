@@ -1,4 +1,4 @@
-body header {
+header {
   height: 63px;
   display: flex;
   flex-direction: column;
@@ -6,12 +6,74 @@ body header {
   align-items: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-body header h1 {
+header h1 {
   font-family: Shrikhand;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
   margin: 0;
+}
+
+.heart {
+  position: absolute;
+  top: 203px;
+  right: 10%;
+  font-size: 22px;
+}
+
+footer {
+  background-color: #353535;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+footer h2 {
+  margin: 0;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.24px;
+  text-align: left;
+}
+footer p {
+  margin: 0;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+}
+footer p a {
+  color: #FFF;
+}
+footer p a .fa-utensils {
+  padding-right: 10px;
+}
+footer p a .fa-handshake-angle {
+  padding-right: 5px;
+}
+footer p.contact {
+  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 769px) {
+  footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+  footer h2 {
+    order: 2;
+    padding-left: 65px;
+    padding-right: 50px;
+  }
+  footer p {
+    padding-top: 29px;
+  }
 }
 body section.location {
   background-color: #EAEAEA;
@@ -193,49 +255,6 @@ body section.restaurants div a article div p {
   font-style: normal;
   font-weight: 300;
 }
-body section.restaurants div a article i {
-  position: absolute;
-  top: 203px;
-  right: 10%;
-  font-size: 22px;
-}
-body footer {
-  background-color: #353535;
-  color: #FFF;
-  display: flex;
-  flex-direction: column;
-}
-body footer h2 {
-  margin: 0;
-  padding-left: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  font-family: "Shrikhand";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26.24px;
-  text-align: left;
-}
-body footer p {
-  margin: 0;
-  padding-left: 25px;
-  padding-bottom: 15px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18.75px;
-}
-body footer p a {
-  color: #FFF;
-}
-body footer p a .fa-utensils {
-  padding-right: 10px;
-}
-body footer p a .fa-handshake-angle {
-  padding-right: 5px;
-}
-body footer p.contact {
-  padding-bottom: 25px;
-}
 
 @media screen and (min-width: 769px) {
   body {
@@ -260,6 +279,32 @@ body footer p.contact {
     margin-bottom: 50px;
   }
 }
+body header {
+  position: relative;
+}
+body header a {
+  position: absolute;
+  left: 20px;
+}
+body header a i {
+  font-size: 20px;
+}
+body main .hero img {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+}
+body main .restaurant .restaurant-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+body main .restaurant .restaurant-header .heart {
+  top: 23px;
+  right: 29px;
+}
+
 body {
   margin: 0;
   padding: 0;

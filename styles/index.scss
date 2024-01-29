@@ -1,20 +1,4 @@
 body {
-    header {
-        height: 63px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-
-        h1 {
-            font-family: Shrikhand;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 400;
-            margin: 0;
-        }
-    }
 
     section.location {
         background-color: $grey2;
@@ -219,62 +203,11 @@ body {
                             font-weight: 300;
                         }
                     }
-
-                    i {
-                        position: absolute;
-                        top: 203px;
-                        right: 10%;
-                        font-size: 22px;
-                    }
                 }
             }
 
         }
 
-    }
-
-    footer {
-        background-color: $darkenGrey;
-        color: $white;
-        display: flex;
-        flex-direction: column;
-
-        h2 {
-            margin: 0;
-            padding-left: 25px;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            font-family: 'Shrikhand';
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 26.24px;
-            text-align: left;
-        }
-
-        p {
-            margin: 0;
-            padding-left: 25px;
-            padding-bottom: 15px;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 18.75px;
-
-            a {
-                color: $white;
-
-                .fa-utensils {
-                    padding-right: 10px;
-                }
-
-                .fa-handshake-angle {
-                    padding-right: 5px;
-                }
-            }
-
-            &.contact {
-                padding-bottom: 25px;
-            }
-        }
     }
 }
 
@@ -315,10 +248,7 @@ body {
 
                 }
             }
-
-            footer {}
         }
-
 
     }
 
