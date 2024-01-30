@@ -1,0 +1,43 @@
+body {
+
+    header {
+        position: relative;
+
+        a {
+            position: absolute;
+            left: 20px;
+
+            i {
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    main {
+
+        .hero {
+            img {
+                height: 275px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .restaurant {
+
+            .restaurant-header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: relative;
+
+                .heart {
+                    top: 23px;
+                    right: 29px;
+                }
+            }
+        }
+
+    }
+}

@@ -85,3 +85,18 @@ footer {
         }
     }
 }
+
+la-palette-gout{
+    head{
+        title{
+            color: black;
+            font-weight: bold;
+        }
+    }
+    header{
+        title{
+            text-underline-offset: green;
+            text-transform: capitalize;
+        }
+    }
+}
