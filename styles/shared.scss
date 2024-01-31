@@ -66,6 +66,45 @@ footer {
     }
 }
 
+la-palette-gout{
+    head{
+        title{
+            color: black;
+            font-weight: bold;
+        }
+    }
+    header{
+        title{
+            text-underline-offset: green;
+            text-transform: capitalize;
+        }
+        h1{
+        height: 50px;
+        color: white;
+    }
+    }
+}
+
+des-sens{
+
+    head{
+        title{
+            color: black;
+            font-weight: bold;
+        }
+    }
+    header{
+        title{
+            text-underline-offset: green;
+            text-transform: capitalize;
+        }
+        h1{
+        height: 50px;
+        color: white;
+    }
+    }
+}
+
 @media screen and(min-width: 769px) {
 
     footer {
@@ -98,5 +137,29 @@ la-palette-gout{
             text-underline-offset: green;
             text-transform: capitalize;
         }
+        h1{
+        height: 120px;
+        color: white;
+    }
+    }
+}
+
+des-sens{
+
+    head{
+        title{
+            color: black;
+            font-weight: bold;
+        }
+    }
+    header{
+        title{
+            text-underline-offset: green;
+            text-transform: capitalize;
+        }
+        h1{
+        height: 120px;
+        color: white;
+    }
     }
 }
