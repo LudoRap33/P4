@@ -13,6 +13,14 @@ body{
     }
     main {
 
+        .div{
+            title{
+                text-transform: capitalize;
+                text-decoration: underline;
+                color: green;
+            }
+        }
+
         .hero {
             img {
                 height: 275px;
