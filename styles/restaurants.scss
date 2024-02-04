@@ -66,8 +66,12 @@ body{
                         padding-left: 10px;
                         display: flex;
                         justify-content: space-between;
-                        .description {}
-                        .price {}
+                        .description {
+                            width: Hug (27px)
+                            }
+                        .price {
+                             height: Hug (18px)
+                            }
                     }
 
                 }
