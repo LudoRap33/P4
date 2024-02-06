@@ -67,13 +67,15 @@ body{
                         display: flex;
                         justify-content: space-between;
                         .description {
-                            width: Hug (27px)
+                            width: Hug (27px);
+                            flex-direction: row left;
                             }
                         .price {
-                             height: Hug (18px)
+                             height: Hug (5px);
+                             width: Hug (5px);
+                             flex-direction: row right;
                             }
                     }
-
                 }
             }
         } 
