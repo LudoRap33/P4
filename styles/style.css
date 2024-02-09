@@ -1,18 +1,554 @@
-/* Error: Expected whitespace.
- *     ,
- * 194 | @media screen and(min-width: 769px) {
- *     |                  ^
- *     '
- *   styles\shared.scss 194:18  @import
- *   styles\main.scss 2:9       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected whitespace.\a     \2577 \a 194 \2502  @media screen and(min-width: 769px) {\d\a     \2502                   ^\a     \2575 \a   styles\\shared.scss 194:18  @import\a   styles\\main.scss 2:9       root stylesheet";
+header {
+  height: 63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
+header h1 {
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+.heart {
+  position: absolute;
+  top: 203px;
+  right: 10%;
+  font-size: 22px;
+}
+
+footer {
+  background-color: #353535;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+footer h2 {
+  margin: 0;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.24px;
+  text-align: left;
+}
+footer p {
+  margin: 0;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+}
+footer p a {
+  color: #FFF;
+}
+footer p a .fa-utensils {
+  padding-right: 10px;
+}
+footer p a .fa-handshake-angle {
+  padding-right: 5px;
+}
+footer p.contact {
+  padding-bottom: 25px;
+}
+
+la-palette-gout head title {
+  color: black;
+  font-weight: bold;
+}
+la-palette-gout header title {
+  text-underline-offset: green;
+  text-transform: capitalize;
+}
+la-palette-gout header h1 {
+  height: 50px;
+  color: white;
+}
+la-palette-gout footer {
+  background-color: #353535;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+la-palette-gout footer h2 {
+  margin: 0;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.24px;
+  text-align: left;
+}
+la-palette-gout footer p {
+  margin: 0;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+}
+la-palette-gout footer p a {
+  color: #FFF;
+}
+la-palette-gout footer p a .fa-utensils {
+  padding-right: 10px;
+}
+la-palette-gout footer p a .fa-handshake-angle {
+  padding-right: 5px;
+}
+la-palette-gout footer p.contact {
+  padding-bottom: 25px;
+}
+
+des-sens head title {
+  color: black;
+  font-weight: bold;
+}
+des-sens header title {
+  text-underline-offset: green;
+  text-transform: capitalize;
+}
+des-sens header h1 {
+  height: 50px;
+  color: white;
+}
+des-sens footer {
+  background-color: #353535;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+des-sens footer h2 {
+  margin: 0;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.24px;
+  text-align: left;
+}
+des-sens footer p {
+  margin: 0;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+}
+des-sens footer p a {
+  color: #FFF;
+}
+des-sens footer p a .fa-utensils {
+  padding-right: 10px;
+}
+des-sens footer p a .fa-handshake-angle {
+  padding-right: 5px;
+}
+des-sens footer p.contact {
+  padding-bottom: 25px;
+}
+
+@media screen and (min-width: 769px) {
+  footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+  footer h2 {
+    order: 2;
+    padding-left: 65px;
+    padding-right: 50px;
+  }
+  footer p {
+    padding-top: 29px;
+  }
+}
+la-palette-gout head title {
+  color: black;
+  font-weight: bold;
+}
+la-palette-gout header title {
+  text-underline-offset: green;
+  text-transform: capitalize;
+}
+la-palette-gout header h1 {
+  height: 120px;
+  color: white;
+}
+
+des-sens head title {
+  color: black;
+  font-weight: bold;
+}
+des-sens header title {
+  text-underline-offset: green;
+  text-transform: capitalize;
+}
+des-sens header h1 {
+  height: 120px;
+  color: white;
+}
+
+body section.location {
+  background-color: #EAEAEA;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+body section.location i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+body section.location span {
+  color: #353535;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+body section.reservation {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section.reservation h2 {
+  margin: 0;
+  padding-top: 30px;
+}
+body section.reservation p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+}
+body section.reservation button {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  /* Shadow/Button */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #FFF;
+  text-align: center;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+body section.functioning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section.functioning h2 {
+  text-align: left;
+  width: 80%;
+}
+body section.functioning div {
+  width: 80%;
+}
+body section.functioning div div {
+  border-radius: 20px;
+  background: #F6F6F6;
+  /* Shadow/Instructions */
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  height: 72.379px;
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+body section.functioning div div:hover i {
+  color: #9356DC;
+}
+body section.functioning div div .round {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 14.182px;
+  font-style: normal;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -11px;
+}
+body section.functioning div div i {
+  color: #7E7E7E;
+  font-size: 19px;
+  margin-left: 5%;
+}
+body section.functioning div div .title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  width: 80%;
+  text-align: center;
+}
+body section.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+body section.restaurants h2 {
+  text-align: left;
+  width: 80%;
+}
+body section.restaurants div {
+  width: 80%;
+}
+body section.restaurants div a {
+  width: 100%;
+}
+body section.restaurants div a article {
+  border-radius: 15px;
+  height: 251px;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  margin-bottom: 18px;
+}
+body section.restaurants div a article .sticker {
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  color: #008766;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  top: 15px;
+  right: 15px;
+}
+body section.restaurants div a article img {
+  height: 174px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  object-fit: cover;
+}
+body section.restaurants div a article div {
+  height: 77px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 13px;
+}
+body section.restaurants div a article div h3 {
+  margin: 0;
+}
+body section.restaurants div a article div p {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    height: auto;
+  }
+  body main section.functioning div {
+    display: flex;
+    justify-content: space-between;
+  }
+  body main section.functioning div div {
+    width: 30%;
+  }
+  body main section.restaurants div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  body main section.restaurants div a {
+    width: 45%;
+  }
+  body main section.restaurants div a article {
+    margin-bottom: 50px;
+  }
+}
+body header {
+  position: relative;
+}
+body header a {
+  position: absolute;
+  left: 20px;
+}
+body header a i {
+  font-size: 20px;
+}
+body main .div title {
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: green;
+}
+body main .hero img {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+}
+body main .restaurant {
+  background-color: #F6F6F6;
+  padding: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -30px;
+  z-index: 1;
+  position: relative;
+}
+body main .restaurant .restaurant-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+body main .restaurant .restaurant-header h2 {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body main .restaurant .restaurant-header .heart {
+  top: 31px;
+  right: 29px;
+}
+body main .restaurant .menu h3 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+body main .restaurant .menu hr {
+  color: rgb(153, 226, 208);
+  height: 3px;
+  border-width: 0;
+  background-color: #99E2D0;
+  width: 40px;
+  margin-top: -12px;
+  margin-bottom: 12px;
+  margin-left: 0;
+  margin-right: 0;
+}
+body main .restaurant .menu article {
+  height: 49px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+body main .restaurant .menu article h4 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 10xp;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+body main .restaurant .menu article div {
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+body main .restaurant .menu article div .price {
+  flex-direction: row right;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+body main .restaurant .menu button {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  /* Shadow/Button */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #FFF;
+  text-align: center;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
