@@ -268,7 +268,7 @@ body {
                     article{
                         height: 169px;
                         background-color: white;
-                        border-radius: 115px;
+                        border-radius: 125px;
                         box-shadow: 0px 4.011494159698486px 15.043103218070613px 0px #0000001A;
          
                         h3 {
@@ -288,12 +288,12 @@ body {
                             display: flex;
                             justify-content: space-between;
                             .description {
-                                width: Hug (127px);
+                                width: Hug (27px);
                                 flex-direction: row left;
                                 }
                             .price {
-                                 height: Hug (105px);
-                                 width: Hug (105px);
+                                 height: Hug (15px);
+                                 width: Hug (15px);
                                  flex-direction: row right;
                                 }
                         }
@@ -311,7 +311,7 @@ body {
                     justify-content: space-between;
 
                     div {
-                        width: 30%;
+                        width: 50%;
                     }
                 }
             }
@@ -324,7 +324,7 @@ body {
                     flex-wrap: wrap;
 
                     a {
-                        width: 45%;
+                        width: 65%;
 
                         article {
                             margin-bottom: 50px;
