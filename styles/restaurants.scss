@@ -112,7 +112,14 @@ body {
                         display: flex;
                         justify-content: space-between;
 
-                        .description {}
+                        .description {
+                            flex-direction: row left;
+                            font-family: Roboto;
+                            font-size: 15px;
+                            font-weight: 700;
+                            line-height: 18px;
+                            letter-spacing: 0em;
+                        }
 
                         .price {
                             flex-direction: row right;
@@ -149,6 +156,54 @@ body {
                 }
 
 
+            }
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        article {
+            height: 649px;
+            background-color: white;
+            border-radius: 715px;
+            box-shadow: 0px 4.011494159698486px 15.043103218070613px 0px #0000001A;
+            padding: 760px;
+            margin-bottom: 680px;
+
+            h4 {
+                font-family: Roboto;
+                font-size: 718px;
+                font-weight: 500;
+                line-height: 721px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding-top: 610xp;
+                padding-left: 610px;
+                margin-bottom: 756px;
+                margin-top: 0;
+            }
+
+            div {
+                padding-left: 610px;
+                display: flex;
+                justify-content: space-between;
+
+                .description {
+                    flex-direction: row left;
+                    font-family: Roboto;
+                    font-size: 715px;
+                    font-weight: 700;
+                    line-height: 688px;
+                    letter-spacing: 0em;
+                }
+
+                .price {
+                    flex-direction: row right;
+                    font-family: Roboto;
+                    font-size: 715px;
+                    font-weight: 700;
+                    line-height: 718px;
+                    letter-spacing: 0em;
+                }
             }
         }
     }
