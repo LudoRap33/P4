@@ -15,6 +15,36 @@ header {
     }
 }
 
+button {
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--Button-Gradient, linear-gradient(193deg, $violet -11.44%, $pink 123.93%));
+    /* Shadow/Button */
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: $white;
+    text-align: center;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    transition: box-shadow .5s, opacity .5s, transform .5s;
+
+    &:hover {
+        opacity: 85%;
+        box-shadow: 4px 8px 10px 4px rgba(0, 0, 0, 0.25);
+        transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        /* IE 9 */
+        -webkit-transform: scale(1.01);
+        /* Safari 3-8 */
+        transform: scale(1.01);
+    }
+}
+
 .heart {
     position: absolute;
     top: 203px;
@@ -66,29 +96,32 @@ footer {
     }
 }
 
-la-palette-gout{
-    head{
-        title{
+la-palette-gout {
+    head {
+        title {
             color: black;
             font-weight: bold;
         }
     }
-    header{
-        title{
+
+    header {
+        title {
             text-underline-offset: green;
             text-transform: capitalize;
         }
-        h1{
-        height: 50px;
-        color: white;
+
+        h1 {
+            height: 50px;
+            color: white;
+        }
     }
-    }
+
     footer {
         background-color: $darkenGrey;
         color: $white;
         display: flex;
         flex-direction: column;
-    
+
         h2 {
             margin: 0;
             padding-left: 25px;
@@ -100,7 +133,7 @@ la-palette-gout{
             line-height: 26.24px;
             text-align: left;
         }
-    
+
         p {
             margin: 0;
             padding-left: 25px;
@@ -108,19 +141,19 @@ la-palette-gout{
             font-size: 16px;
             font-weight: 500;
             line-height: 18.75px;
-    
+
             a {
                 color: $white;
-    
+
                 .fa-utensils {
                     padding-right: 10px;
                 }
-    
+
                 .fa-handshake-angle {
                     padding-right: 5px;
                 }
             }
-    
+
             &.contact {
                 padding-bottom: 25px;
             }
@@ -128,30 +161,33 @@ la-palette-gout{
     }
 }
 
-des-sens{
+des-sens {
 
-    head{
-        title{
+    head {
+        title {
             color: black;
             font-weight: bold;
         }
     }
-    header{
-        title{
+
+    header {
+        title {
             text-underline-offset: green;
             text-transform: capitalize;
         }
-        h1{
-        height: 50px;
-        color: white;
+
+        h1 {
+            height: 50px;
+            color: white;
+        }
     }
-    }
+
     footer {
         background-color: $darkenGrey;
         color: $white;
         display: flex;
         flex-direction: column;
-    
+
         h2 {
             margin: 0;
             padding-left: 25px;
@@ -163,7 +199,7 @@ des-sens{
             line-height: 26.24px;
             text-align: left;
         }
-    
+
         p {
             margin: 0;
             padding-left: 25px;
@@ -171,19 +207,19 @@ des-sens{
             font-size: 16px;
             font-weight: 500;
             line-height: 18.75px;
-    
+
             a {
                 color: $white;
-    
+
                 .fa-utensils {
                     padding-right: 10px;
                 }
-    
+
                 .fa-handshake-angle {
                     padding-right: 5px;
                 }
             }
-    
+
             &.contact {
                 padding-bottom: 25px;
             }
@@ -211,41 +247,45 @@ des-sens{
     }
 }
 
-la-palette-gout{
-    head{
-        title{
+la-palette-gout {
+    head {
+        title {
             color: black;
             font-weight: bold;
         }
     }
-    header{
-        title{
+
+    header {
+        title {
             text-underline-offset: green;
             text-transform: capitalize;
         }
-        h1{
-        height: 120px;
-        color: white;
-    }
+
+        h1 {
+            height: 120px;
+            color: white;
+        }
     }
 }
 
-des-sens{
+des-sens {
 
-    head{
-        title{
+    head {
+        title {
             color: black;
             font-weight: bold;
         }
     }
-    header{
-        title{
+
+    header {
+        title {
             text-underline-offset: green;
             text-transform: capitalize;
         }
-        h1{
-        height: 120px;
-        color: white;
-    }
+
+        h1 {
+            height: 120px;
+            color: white;
+        }
     }
 }
