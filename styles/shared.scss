@@ -248,6 +248,7 @@ des-sens {
 }
 
 la-palette-gout {
+    
     head {
         title {
             color: black;
@@ -270,14 +271,14 @@ la-palette-gout {
 
 des-sens {
 
-    head {
+    .head {
         title {
             color: black;
             font-weight: bold;
         }
     }
 
-    header {
+    .header {
         title {
             text-underline-offset: green;
             text-transform: capitalize;
