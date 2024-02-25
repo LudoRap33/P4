@@ -45,12 +45,44 @@ button {
     }
 }
 
-.heart {
-    position: absolute;
-    top: 203px;
-    right: 10%;
-    font-size: 22px;
+.like {
+    position: relative;
+    width: 22px;
+
+    .fa-regular {
+        position: absolute;
+        color: black;
+        font-size: 22px;
+        transition: opacity 500ms;
+    }
+
+    .fa-solid {
+        position: absolute;
+        opacity: 0;
+        background-clip: text;
+        color: transparent;
+        font-size: 22px;
+        transition: opacity 500ms;
+        background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    }
+
+    &:hover {
+        .fa-regular {
+            opacity: 0;
+        }
+
+        .fa-solid {
+            opacity: 1;
+        }
+    }
 }
+
+// .heart {
+//     position: absolute;
+//     top: 203px;
+//     right: 10%;
+//     font-size: 22px;
+// }
 
 footer {
     background-color: $darkenGrey;
@@ -96,137 +128,6 @@ footer {
     }
 }
 
-la-palette-gout {
-    head {
-        title {
-            color: black;
-            font-weight: bold;
-        }
-    }
-
-    header {
-        title {
-            text-underline-offset: green;
-            text-transform: capitalize;
-        }
-
-        h1 {
-            height: 50px;
-            color: white;
-        }
-    }
-
-    footer {
-        background-color: $darkenGrey;
-        color: $white;
-        display: flex;
-        flex-direction: column;
-
-        h2 {
-            margin: 0;
-            padding-left: 25px;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            font-family: 'Shrikhand';
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 26.24px;
-            text-align: left;
-        }
-
-        p {
-            margin: 0;
-            padding-left: 25px;
-            padding-bottom: 15px;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 18.75px;
-
-            a {
-                color: $white;
-
-                .fa-utensils {
-                    padding-right: 10px;
-                }
-
-                .fa-handshake-angle {
-                    padding-right: 5px;
-                }
-            }
-
-            &.contact {
-                padding-bottom: 25px;
-            }
-        }
-    }
-}
-
-des-sens {
-
-    head {
-        title {
-            color: black;
-            font-weight: bold;
-        }
-    }
-
-    header {
-        title {
-            text-underline-offset: green;
-            text-transform: capitalize;
-        }
-
-        h1 {
-            height: 50px;
-            color: white;
-        }
-    }
-
-    footer {
-        background-color: $darkenGrey;
-        color: $white;
-        display: flex;
-        flex-direction: column;
-
-        h2 {
-            margin: 0;
-            padding-left: 25px;
-            padding-top: 25px;
-            padding-bottom: 25px;
-            font-family: 'Shrikhand';
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 26.24px;
-            text-align: left;
-        }
-
-        p {
-            margin: 0;
-            padding-left: 25px;
-            padding-bottom: 15px;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 18.75px;
-
-            a {
-                color: $white;
-
-                .fa-utensils {
-                    padding-right: 10px;
-                }
-
-                .fa-handshake-angle {
-                    padding-right: 5px;
-                }
-            }
-
-            &.contact {
-                padding-bottom: 25px;
-            }
-        }
-    }
-}
-
 @media screen and(min-width: 769px) {
 
     footer {
@@ -243,50 +144,6 @@ des-sens {
 
         p {
             padding-top: 29px;
-        }
-    }
-}
-
-la-palette-gout {
-    
-    head {
-        title {
-            color: black;
-            font-weight: bold;
-        }
-    }
-
-    header {
-        title {
-            text-underline-offset: green;
-            text-transform: capitalize;
-        }
-
-        h1 {
-            height: 120px;
-            color: white;
-        }
-    }
-}
-
-des-sens {
-
-    .head {
-        title {
-            color: black;
-            font-weight: bold;
-        }
-    }
-
-    .header {
-        title {
-            text-underline-offset: green;
-            text-transform: capitalize;
-        }
-
-        h1 {
-            height: 120px;
-            color: white;
         }
     }
 }
