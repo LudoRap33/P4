@@ -56,13 +56,9 @@ body {
 
                 }
 
-                .heart {
-                    top: 31px;
-                    right: 29px;
-                    background-color: purple;
-                    transform: scale(1);
-                    position: sticky;
-                    top: 80px;
+                .like {
+                    display: flex;
+                    align-items: center;
                 }
             }
 
@@ -97,6 +93,32 @@ body {
                     box-shadow: 0px 4.011494159698486px 15.043103218070613px 0px #0000001A;
                     padding: 10px;
                     margin-bottom: 10px;
+                    animation: fadeIn 0.5s both;
+                    opacity: 0;
+
+                    &.delay-1 {
+                        animation-delay: 500ms;
+                    }
+
+                    &.delay-2 {
+                        animation-delay: 1000ms;
+                    }
+
+                    &.delay-3 {
+                        animation-delay: 1500ms;
+                    }
+
+                    @keyframes fadeIn {
+                        0% {
+                            opacity: 0;
+                            transform: translateY(-20px);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
+                    }
 
                     h4 {
                         font-family: Roboto;
@@ -158,6 +180,10 @@ body {
 
                 .restaurant-header {
                     justify-content: center;
+
+                    .like {
+                        margin-left: 10%;
+                    }
                 }
             }
         }

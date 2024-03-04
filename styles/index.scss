@@ -14,16 +14,12 @@ body {
         animation: loading-bg 1s 3s forwards;
 
         .loader {
-        
-            width: 48px;
-            height: 48px;
-            border: 3px dotted #FFF;
-            border-style: solid solid dotted dotted;
+            transform: rotateZ(45deg);
+            perspective: 1000px;
             border-radius: 50%;
-            display: inline-block;
-            position: relative;
-            box-sizing: border-box;
-            animation: rotation 2s linear infinite;
+            width: 200px;
+            height: 200px;
+            color: $pink;
 
             &:before,
             &::after {
@@ -281,24 +277,38 @@ body {
                         object-fit: cover;
                     }
 
-                    div {
+                    .description-container {
                         height: 77px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
                         padding-left: 13px;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 90%;
+                        padding-right: 13px;
 
-                        h3 {
-                            margin: 0;
+                        .description {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+
+                            h3 {
+                                margin: 0;
+                            }
+
+                            p {
+                                margin: 0;
+                                font-family: Roboto;
+                                font-size: 17px;
+                                font-style: normal;
+                                font-weight: 300;
+                            }
                         }
 
-                        p {
-                            margin: 0;
-                            font-family: Roboto;
-                            font-size: 17px;
-                            font-style: normal;
-                            font-weight: 300;
+                        .like {
+                            display: flex;
+                            align-items: center;
                         }
+
+
 
                         button {
                             display: inline/inline-block;

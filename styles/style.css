@@ -359,24 +359,34 @@ body section.restaurants div a article img {
   width: 100%;
   object-fit: cover;
 }
-body section.restaurants div a article div {
+body section.restaurants div a article .description-container {
   height: 77px;
+  padding-left: 13px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding-right: 13px;
+}
+body section.restaurants div a article .description-container .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 13px;
 }
-body section.restaurants div a article div h3 {
+body section.restaurants div a article .description-container .description h3 {
   margin: 0;
 }
-body section.restaurants div a article div p {
+body section.restaurants div a article .description-container .description p {
   margin: 0;
   font-family: Roboto;
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
 }
-body section.restaurants div a article div button {
+body section.restaurants div a article .description-container .like {
+  display: flex;
+  align-items: center;
+}
+body section.restaurants div a article .description-container button {
   display: inline/inline-block;
   text-align: center;
 }
@@ -512,11 +522,9 @@ body main .restaurant .restaurant-header h2 {
   letter-spacing: 0em;
   text-align: left;
 }
-body main .restaurant .restaurant-header .heart {
-  top: 31px;
-  right: 29px;
-  background-color: purple;
-  transform: scale(1);
+body main .restaurant .restaurant-header .like {
+  display: flex;
+  align-items: center;
 }
 body main .restaurant .menu h3 {
   font-family: Roboto;
@@ -545,6 +553,27 @@ body main .restaurant .menu article {
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   padding: 10px;
   margin-bottom: 10px;
+  animation: fadeIn 0.5s both;
+  opacity: 0;
+}
+body main .restaurant .menu article.delay-1 {
+  animation-delay: 500ms;
+}
+body main .restaurant .menu article.delay-2 {
+  animation-delay: 1000ms;
+}
+body main .restaurant .menu article.delay-3 {
+  animation-delay: 1500ms;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 body main .restaurant .menu article h4 {
   font-family: Roboto;
@@ -595,6 +624,9 @@ body main .restaurant .menu div {
   }
   body main .restaurant .restaurant-header {
     justify-content: center;
+  }
+  body main .restaurant .restaurant-header .like {
+    margin-left: 10%;
   }
 }
 body {
