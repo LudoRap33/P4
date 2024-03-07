@@ -91,10 +91,16 @@ body {
                     background-color: white;
                     border-radius: 15px;
                     box-shadow: 0px 4.011494159698486px 15.043103218070613px 0px #0000001A;
-                    padding: 10px;
+                    // padding: 10px;
                     margin-bottom: 10px;
                     animation: fadeIn 0.5s both;
                     opacity: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    height: 69px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
 
                     &.delay-1 {
                         animation-delay: 500ms;
@@ -120,45 +126,80 @@ body {
                         }
                     }
 
-                    h4 {
-                        font-family: Roboto;
-                        font-size: 18px;
-                        font-weight: 500;
-                        line-height: 21px;
-                        letter-spacing: 0em;
-                        text-align: left;
-                        padding-top: 10xp;
-                        padding-left: 10px;
-                        margin-bottom: 6px;
-                        margin-top: 0;
+                    .description-container {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        padding: 10px;
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
-                    }
 
-                    div {
-                        padding-left: 10px;
-                        display: flex;
-                        justify-content: space-between;
-
-                        .description {
+                        h4 {
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            padding-top: 10xp;
+                            padding-left: 10px;
+                            margin-bottom: 6px;
+                            margin-top: 0;
                             overflow: hidden;
                             white-space: nowrap;
                             text-overflow: ellipsis;
                         }
 
-                        .price {
-                            flex-direction: row right;
-                            font-family: Roboto;
-                            font-size: 15px;
-                            font-weight: 700;
-                            line-height: 18px;
-                            letter-spacing: 0em;
+                        .sub-title {
+                            padding-left: 10px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .description {
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+
+                            .price {
+                                flex-direction: row right;
+                                font-family: 'Roboto';
+                                font-size: 15px;
+                                font-weight: 700;
+                                line-height: 18px;
+                                letter-spacing: 0em;
+                            }
+                        }
+                    }
+
+                    .tick {
+                        background-color: $greenLight;
+                        color: $white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: -60px;
+                        transition: all .4s linear;
+                        width: 59px;
+                        // border-bottom-right-radius: 15px;
+                        // border-top-right-radius: 15px;
+
+
+                        i {
+                            font-size: 21px;
+                            margin: 0;
+                        }
+                    }
+
+                    &:hover {
+                        .tick {
+                            margin-right: 0;
                         }
                     }
                 }
 
-                div {
+                .command {
                     display: flex;
                     justify-content: center;
                     transform: scale(1);
