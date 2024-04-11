@@ -311,7 +311,7 @@ body {
 
 
                         button {
-                            display: inline/inline-block;
+                            // display: inline/inline-block;
                             text-align: center;
                         }
                     }
@@ -389,7 +389,7 @@ body {
                             line-height: 121px;
                             letter-spacing: 0em;
                             text-align: left;
-                            padding-top: 110xp;
+                            padding-top: 110px;
                             padding-left: 110px;
                             margin-bottom: 106px;
                         }
@@ -400,14 +400,11 @@ body {
                             justify-content: space-between;
 
                             .description {
-                                width: Hug (27px);
-                                flex-direction: row left;
+                                flex-direction: row;
                             }
 
                             .price {
-                                height: Hug (15px);
-                                width: Hug (15px);
-                                flex-direction: row right;
+                                flex-direction: row;
                             }
                         }
                     }

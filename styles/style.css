@@ -387,7 +387,6 @@ body section.restaurants div a article .description-container .like {
   align-items: center;
 }
 body section.restaurants div a article .description-container button {
-  display: inline/inline-block;
   text-align: center;
 }
 
@@ -441,7 +440,7 @@ body section.restaurants div a article .description-container button {
     line-height: 121px;
     letter-spacing: 0em;
     text-align: left;
-    padding-top: 110xp;
+    padding-top: 110px;
     padding-left: 110px;
     margin-bottom: 106px;
   }
@@ -451,13 +450,10 @@ body section.restaurants div a article .description-container button {
     justify-content: space-between;
   }
   body main .restaurant .menu article div .description {
-    width: Hug 27px;
-    flex-direction: row left;
+    flex-direction: row;
   }
   body main .restaurant .menu article div .price {
-    height: Hug 15px;
-    width: Hug 15px;
-    flex-direction: row right;
+    flex-direction: row;
   }
   body main section.functioning div {
     display: flex;
@@ -596,7 +592,6 @@ body main .restaurant .menu article .description-container h4 {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
-  padding-top: 10xp;
   padding-left: 10px;
   margin-bottom: 6px;
   margin-top: 0;
@@ -615,7 +610,6 @@ body main .restaurant .menu article .description-container .sub-title .descripti
   text-overflow: ellipsis;
 }
 body main .restaurant .menu article .description-container .sub-title .price {
-  flex-direction: row right;
   font-family: "Roboto";
   font-size: 15px;
   font-weight: 700;
